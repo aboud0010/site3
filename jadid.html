@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* style.css */
+
+/* Header */
+header {
+    text-align: center;
+    font-family: sans-serif;
+    color: blue;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(221, 221, 221);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    color: rgb(104, 24, 231);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filiere {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.filiere:hover {
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: rgb(223, 223, 223);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus {
+    background-color: blue;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-left: 10px;
+}
+
+footer ul li a {
+    
+    color: black;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="ofppt.png" alt="OFPPT Logo" style="height: 60px;">
+        <h1>Bienvenue à OFPPT</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Formations</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Filière 1 -->
+            <div class="filiere">
+                <h2>Filière 1</h2>
+                <p>Description de la filière 1. Cette filière offre des compétences en...</p>
+                <ul>
+                    <li><a href="#">Cours 1</a></li>
+                    <li><a href="#">Cours 2</a></li>
+                    <li><a href="#">Cours 3</a></li>
+                    <li><a href="#">Cours 4</a></li>
+                </ul>
+            </div>
+            <!-- Filière 2 -->
+            <div class="filiere">
+                <h2>Filière 2</h2>
+                <p>Description de la filière 2. Cette filière propose une formation approfondie...</p>
+                <ul>
+                    <li><a href="#">Cours 1</a></li>
+                    <li><a href="#">Cours 2</a></li>
+                    <li><a href="#">Cours 3</a></li>
+                    <li><a href="#">Cours 4</a></li>
+                </ul>
+            </div>
+            <!-- Filière 3 -->
+            <div class="filiere">
+                <h2>Filière 3</h2>
+                <p>Description de la filière 3. Apprenez les bases et les compétences avancées...</p>
+                <ul>
+                    <li><a href="#">Cours 1</a></li>
+                    <li><a href="#">Cours 2</a></li>
+                    <li><a href="#">Cours 3</a></li>
+                    <li><a href="#">Cours 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <section class="login">
+            <h2>Connexion</h2>
+            <form action="#" method="post">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+            <p><a href="#">Créer un nouveau compte</a> | <a href="#">Mot de passe oublié</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="plan.html">Plan du site</a></li>
+            <li><a href="mailto:isfo_vi@ofppt.ma">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
