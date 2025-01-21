@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options du Secteur Digital</title>
+    <style>
+        /* Style Global */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ddd;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .filiere {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .filiere:hover {
+            border-color: #0056b3;
+            background-color: #f1f1f1;
+        }
+
+        .filiere h2 {
+            font-size: 20px;
+            color: #0056b3;
+        }
+
+        .filiere ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .filiere ul li {
+            margin: 10px 0;
+        }
+
+        .filiere ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .filiere ul li a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .login {
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .login h2 {
+            color: #0056b3;
+        }
+
+        .login form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login form input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login form button {
+            padding: 10px;
+            border: none;
+            background-color: #0056b3;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login form button:hover {
+            background-color: #004494;
+        }
+
+        footer {
+            background-color: #ddd;
+            padding: 10px 20px;
+            text-align: right;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        footer ul li {
+            margin-left: 15px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Options du Secteur Digital</h1>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">A propos du Développement Digital</a></li>
+            <li><a href="#">Formation Initiale</a></li>
+            <li><a href="#">Formation Continue</a></li>
+            <li><a href="#">Espace Stagiaire</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <div class="filiere">
+            <h2>DDOWFS</h2>
+            <p>Développement Option Web Full Stack</p>
+            <ul>
+                <li><a href="#">Objectifs</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Débouchés</a></li>
+                <li><a href="#">Employeurs</a></li>
+            </ul>
+        </div>
+
+        <div class="filiere">
+            <h2>DDOAM</h2>
+            <p>Développement Option Applications Mobiles</p>
+            <ul>
+                <li><a href="#">Objectifs</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Débouchés</a></li>
+                <li><a href="#">Employeurs</a></li>
+            </ul>
+        </div>
+
+        <div class="filiere">
+            <h2>DDOARV/RA</h2>
+            <p>Développement Option Applications RV/RA</p>
+            <ul>
+                <li><a href="#">Objectifs</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Débouchés</a></li>
+                <li><a href="#">Employeurs</a></li>
+            </ul>
+        </div>
+        <div>
+            <section class="login">
+                <h2>Connexion</h2>
+                <form action="#" method="post">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <button type="submit">Se connecter</button>
+                </form>
+                <p><a href="#">Créer un nouveau compte</a> | <a href="#">Mot de passe oublié</a></p>
+            </section>
+        </div>
+    </div>
+
+
+    
+    <footer>
+        <ul>
+            <li><a href="#">Plan du site</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+    
+<section style="padding: 20px; background-color: #f9f9f9;">
+    <table style="width: 100%; text-align: center; table-layout: fixed;">
+        <tr>
+            <td style="width: 50%; padding: 10px;">Écrire texte ici</td>
+            <td style="width: 50%; padding: 10px;">Écrire texte ici</td>
+        </tr>
+    </table>
+</section>
+
+</body>
+</html>
